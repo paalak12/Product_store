@@ -1,69 +1,44 @@
-<h1 align="center">✨ Full-Stack Product Store ✨</h1>
+# Product Store 🛍️
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+A full-stack product-sharing platform where creators can showcase their products, discover others' work, and engage through comments — inspired by Product Hunt. Built with the PERN stack as a hands-on learning project.
 
-✨ Highlights
-
-- 🛒 Full-Stack Product Store
-- 🧰 REST API with Node.js & Express
-- 🗄️ PostgreSQL Database Integration
-- 🧬 Drizzle ORM for type-safe database queries
-- 🟦 TypeScript Powered API
-- ⚛️ Modern React Frontend
-- 🎨 Beautiful UI with Tailwind CSS & DaisyUI
-- ⚡ Data Fetching & Caching using TanStack Query
-- 🔄 End-to-End API ↔ Frontend Integration
-- 🧠 Clean Project Structure & Best Practices
-- 🧪 Hands-on Learning by Building (not just theory)
-- 🚀 Production Deployment with Live URL
-- 📎 Resume-Ready Project
-- 💸 100% Free Tools & Setup
-- 📂 Free & Open-Source Code
+🔗 **Live Demo:** [product-store-1-ylu3.onrender.com](https://product-store-1-ylu3.onrender.com)
 
 ---
 
-## 🧪 .env Setup
+## Features
 
-### Backend (`/backend`)
-
-```bash
-PORT=3000
-DATABASE_URL=<YOUR_DB_URL>
-NODE_ENV=development
-
-CLERK_PUBLISHABLE_KEY=<YOUR_CLERK_PUBLISHABLE_KEY>
-CLERK_SECRET_KEY=<YOUR_CLERK_SECRET_KEY>
-
-FRONTEND_URL=http://localhost:5173
-```
-
-### Frontend (`/frontend`)
-
-```bash
-VITE_CLERK_PUBLISHABLE_KEY=<YOUR_CLERK_PUBLISHABLE_KEY>
-
-VITE_API_URL=http://localhost:3000/api
-
-```
+- 🔐 **Authentication** — Secure sign up / sign in via Clerk
+- 📦 **Product Management** — Create, view, edit, and delete your own products
+- 💬 **Comments** — Engage with other creators by commenting on products
+- 👤 **Profile Page** — View and manage all your listed products
+- 🎨 **Theme Selector** — Switch between multiple UI themes powered by DaisyUI
+- 📱 **Responsive Design** — Clean, modern UI that works across devices
 
 ---
 
-## 🔧 Run the Backend
+## Tech Stack
 
-```bash
+**Frontend**
+- React 19, TypeScript, Vite
+- Tailwind CSS, DaisyUI
+- TanStack Query (server state management)
+- React Router, Axios
+- Clerk (authentication UI)
 
-cd backend
-npm install
-npm run dev
-```
+**Backend**
+- Node.js, Express.js
+- PostgreSQL (hosted on Neon)
+- Drizzle ORM + Drizzle Kit (schema & migrations)
+- Clerk (session & auth management)
 
 ---
 
-## 🔧 Run the Frontend
+### Prerequisites
+- Node.js v20+
+- PostgreSQL database (or a free [Neon](https://neon.tech) instance)
+- [Clerk](https://clerk.com) account for authentication keys
 
-```
-bash
-cd frontend
-npm install
-npm run dev
-```
+
+
+Built following a PERN stack tutorial to learn full-stack development with TypeScript, Drizzle ORM, and Clerk authentication.
